@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+     flex-wrap: nowrap;
+
+    overflow: auto;
+}
+  .box-1{
+   flex-shrink: 0;
+    
+  }
+
+  .main::-webkit-scrollbar{
+    display: none;
+  }
+  .main::-webkit-scrollbar-thumb{
+   border: 1px solid black;
+  }
+
+ .box-1:nth-child(2n-1){
+    background-color: crimson;
+    width: 15rem;
+    height: 15rem;
+
+ }
+
+.main .box-1:nth-child(2n){
+    background-color: blue;
+    width: 15rem;
+    height: 15rem;
+}
+.main:nth-child(3n){
+    background-color: rgb(8, 35, 0);
+     width: 15rem;
+    height: 15rem;
+}
+.main:nth-child(4n){
+    background-color: cyan;
+     width: 15rem;
+    height: 15rem;
+}
